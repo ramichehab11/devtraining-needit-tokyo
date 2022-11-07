@@ -30,18 +30,10 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var count;
+	var niutils = new NeedItUtils();
+	var count= niutils.countingRecords("change_request");
 	
-	var gr = new GlideRecord('change_request');
-
-	gr.query();
-
-	while(gr.next()){
-		if(gr.Location =='Paris'){
-			count+=1;
-		}
-	}
-	gs.addInfoMessage("I have "+count+" changes in paris ");
+	gs.addInfoMessage("I have "+count+" users in Paris ");
 
 
  
