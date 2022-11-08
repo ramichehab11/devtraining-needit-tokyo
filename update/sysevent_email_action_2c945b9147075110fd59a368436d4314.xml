@@ -43,6 +43,7 @@
 <p>&nbsp;<strong>Please complete this task as soon as possible.</strong></p>
 <p><strong>Click here to view the NeedIt Task record: ${URI_REF}. </strong></p>
 <p>hi:${mail_script:CountOverdueNeedItTasksAssignedTo}</p>
+<p>${mailto:mailto.closeneedittask}</p>
 <p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
