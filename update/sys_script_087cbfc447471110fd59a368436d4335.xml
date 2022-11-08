@@ -41,7 +41,7 @@
 			count+=1;
 		}
 	}
-	gs.addInfoMessage("I have "+count+" users in paris ");
+	gs.addInfoMessage("I have "+count+" users in Paris ");
 
 
  

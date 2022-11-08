@@ -30,8 +30,8 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var niutils = new NeedItUtils();
-	var count= niutils.countingRecords("change_request");
+	var counting = new Counting();
+	var count= counting.countingRecords("change_request");
 	
 	gs.addInfoMessage("I have "+count+" users in Paris ");
 
